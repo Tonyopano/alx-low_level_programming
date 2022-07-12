@@ -27,4 +27,3 @@ for (i = 0; i < count - 1; i++)
 {
 end_c++;
 }
-
