@@ -1,15 +1,21 @@
 #include <stdio.h>
 /**
- * main - main function
+ * main - my main fuction
  *
- * Return: End the program
+ * Return: Always 0 (success)
  */
 int main(void)
-{
-	char letter;
 
-	for (letter = 'a'; letter <= 'z'; ++letter)
-	printf("%c", letter);
-	printf("\n");
-	return (0);
+{
+char alphabet;
+
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+{
+putchar(alphabet);
+}
+
+putchar('\n');
+
+return (0);
+
 }
