@@ -1,68 +1,29 @@
 #include "main.h"
+#include <stdlib.h>
 /**
- *_strlen - count array
- *@s: array of elements
- *Return: 1
+ * _strdup - returns a pointer to a newly allocated space in memory.
+ * @str: string.
+ *
+ * Return: pointer of an array of chars
  */
-
-int _strlen(char *s)
-{
-unsigned int i;
-
-i = 0;
-while (s[i] != '\0') /*count character of string*/
-{
-i++;
-}
-
-return (i);
-}
-
-/**
- *_strcpy - copy arrays
- *@src: array of elements
- *@dest: dest array
- *Return: dest
- */
-
-char *_strcpy(char *dest, char *src)
-{
-int i = 0;
-
-while (src[i] != '\0')
-{
-dest[i] = src[i];
-i++;
-}
-dest[i] = '\0';
-
-return (dest);
-}
-
-/**
- *_strdup - array for prints a string
- *@str: array of elements
- *Return: pointer
- */
-
 char *_strdup(char *str)
 {
-char *dst;
-unsigned int size;
+	char *strout;
+	unsigned int i, j;
 
-if (str == 0)
-{
-return (NULL);
-}
+	if (str == NULL)
+		return (NULL);
 
-size = _strlen(str) + 1;
+	for (i = 0; str[i] != '\0'; i++)
+		;
 
-dst = (char *) malloc(size *sizeof(char));
+	strout = (char *)malloc(sizeof(char) * (i + 1));
 
-if (dst == 0)
-{
-return (NULL);
-}
-_strcpy(dst, str);
-return (dst);
+	if (strout == NULL)
+		return (NULL);
+
+	for (j = 0; j <= i; j++)
+		strout[j] = str[j];
+
+	return (strout);
 }
