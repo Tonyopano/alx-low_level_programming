@@ -48,6 +48,10 @@ All work contained in this project was completed as part of the curriculum for t
 For more information, visit [this link](https://www.alxafrica.com//)
 
 
-
-![Logo](https://africabusinesscommunities.com/Images/Key%20Logos/alx.png)
+<p align="center">
+  <img src="http://www.alxafrica.com/wp-content/uploads/2022/01/header-logo.png"
+    alt="ALX Africa Logo"
+  >
+  </p>
+<!-- ![Logo](https://africabusinesscommunities.com/Images/Key%20Logos/alx.png) -->
 
